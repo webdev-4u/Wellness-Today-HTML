@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Wellness Today</title>
+    <meta property="og:title" content="Wellness Today" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:title" content="Wellness Today" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}/* A link wrapped around a flex or grid item draws no box of its own, so it has   nothing to paint a focus ring on. The ring goes on the element it wraps. */a[data-thq-link-wrapper]:focus-visible > * {  outline: 2px solid Highlight;  outline: 5px auto -webkit-focus-ring-color;  outline-offset: 2px;}/* A box the canvas draws as a block can be written as its own link on the page,   and a link is laid out in line with text unless a rule says otherwise. Zero   weight: any rule of the page's own still decides. */:where(a[data-thq-link-box]) {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Roboto;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: 0.03em;
+        line-height: 1.65;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      a:has(> [class*="-thq-product-card-elm"]) { display: contents; }
+      [class*="-thq-product-item-wrapper-elm"] > a { display: contents; }
+      [data-thq="slider-button-prev"]:has(> *)::after, [data-thq="slider-button-next"]:has(> *)::after { display: none; }
+      [data-thq="slider-button-prev"]:has(> *), [data-thq="slider-button-next"]:has(> *) { width: auto; height: auto; margin-top: 0; }
+    </style>
+    <style>
+      a:focus-visible,
+      button:focus-visible,
+      input:focus-visible,
+      select:focus-visible,
+      textarea:focus-visible,
+      summary:focus-visible,
+      [tabindex]:focus-visible,
+      [role="button"]:focus-visible,
+      [role="link"]:focus-visible,
+      [role="radio"]:focus-visible,
+      [role="checkbox"]:focus-visible,
+      [role="tab"]:focus-visible,
+      [role="menuitem"]:focus-visible {
+        outline: 2px solid var(--color-primary, #2563eb);
+        outline-offset: 2px;
+      }
+      [role="radio"]:focus-visible {
+        outline-offset: 0;
+      }
+      [tabindex="-1"]:focus-visible {
+        outline: none;
+      }
+      .tq-skip-link {
+        position: fixed;
+        top: -100px;
+        left: 8px;
+        z-index: 100000;
+        padding: 10px 16px;
+        border-radius: 0 0 6px 6px;
+        background: var(--color-primary, #2563eb);
+        color: var(--color-on-primary, #ffffff);
+        font: 600 14px/1.2 system-ui, -apple-system, "Segoe UI", sans-serif;
+        text-decoration: none;
+        transition: top 0.15s ease;
+      }
+      .tq-skip-link:focus {
+        top: 0;
+      }
+    </style>
+
+    <script>
+      (function () {
+        var documentUrl = String(document.URL).split('#')[0]
+        window.addEventListener(
+          'error',
+          function (event) {
+            if (!event.error || String(event.filename || '').split('#')[0] !== documentUrl) {
+              return
+            }
+            event.preventDefault()
+            event.stopImmediatePropagation()
+            console.warn('A custom code script on this page failed:', event.error)
+          },
+          true
+        )
+      })()
+    </script>
+    <script>
+      (function () {
+        if (window.__tqSkipLink) { return; }
+        window.__tqSkipLink = true;
+
+        var TARGET_ID = 'tq-main';
+        var CHROME = 'header, nav, footer, [role="banner"], [role="contentinfo"], .tq-skip-link';
+
+        function appRoot() {
+          return document.getElementById('__next') || document.body;
+        }
+
+        function resolveTarget() {
+          var root = appRoot();
+          if (!root) { return null; }
+          var landmark = root.querySelector('main, [role="main"]');
+          if (landmark) { return landmark; }
+          // A page root holding [nav, section, section, …, footer]: the content
+          // starts at the first child that is not chrome.
+          var page = root.firstElementChild || root;
+          var children = page.children || [];
+          for (var i = 0; i < children.length; i++) {
+            if (!children[i].matches(CHROME)) { return children[i]; }
+          }
+          return page;
+        }
+
+        function ensureTarget() {
+          var target = resolveTarget();
+          if (!target) { return null; }
+          if (!target.id) { target.id = TARGET_ID; }
+          // Without this the browser scrolls to the anchor but leaves focus at the
+          // top of the page, so the next Tab walks back into the navigation.
+          if (!target.hasAttribute('tabindex')) { target.setAttribute('tabindex', '-1'); }
+          return target;
+        }
+
+        function ensureLink() {
+          var existing = document.querySelector('.tq-skip-link');
+          var target = ensureTarget();
+          if (!target) { return; }
+          var href = '#' + target.id;
+          if (existing) { existing.setAttribute('href', href); return; }
+          var link = document.createElement('a');
+          link.className = 'tq-skip-link';
+          link.setAttribute('href', href);
+          link.textContent = 'Skip to content';
+          // Before the app's own root, so it is first in the document without
+          // moving anything the app rendered.
+          var root = appRoot();
+          if (root && root.parentNode) {
+            root.parentNode.insertBefore(link, root);
+          } else {
+            document.body.insertBefore(link, document.body.firstChild);
+          }
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', ensureLink);
+        } else {
+          ensureLink();
+        }
+
+        // A client-side route change swaps the page's content, so the target the link
+        // points at has to be resolved again.
+        if (typeof MutationObserver !== 'undefined') {
+          var pending = false;
+          new MutationObserver(function () {
+            if (pending) { return; }
+            pending = true;
+            window.requestAnimationFrame(function () { pending = false; ensureLink(); });
+          }).observe(document.documentElement, { subtree: true, childList: true });
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container1">
+        <navigation-wrapper class="navigation-wrapper">
+          <!--Navigation component-->
+          <div role="banner" class="navigation-container1">
+            <nav class="navigation-wrapper">
+              <div class="navigation-container">
+                <div class="navigation-links-left">
+                  <a
+                    href="index.html"
+                    data-thq-link-box="true"
+                    class="navigation-link"
+                  >
+                    <span>Services</span>
+                  </a>
+                  <a
+                    href="index.html"
+                    data-thq-link-box="true"
+                    class="navigation-link"
+                  >
+                    <span>Assessment</span>
+                  </a>
+                </div>
+                <a
+                  href="index.html"
+                  data-thq-link-box="true"
+                  class="navigation-logo-group"
+                >
+                  <div class="navigation-logo-icon">
+                    <svg
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8c0 5.5-4.78 10-10 10"
+                        ></path>
+                        <path
+                          d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <span class="navigation-brand-name">SageSlate Care</span>
+                </a>
+                <div class="navigation-links-right">
+                  <a
+                    href="index.html"
+                    data-thq-link-box="true"
+                    class="navigation-link"
+                  >
+                    <span>Contact</span>
+                  </a>
+                  <a
+                    href="index.html"
+                    data-thq-link-box="true"
+                    class="btn-sm btn-primary btn"
+                  >
+                    <span>Book Consultation</span>
+                  </a>
+                </div>
+                <button
+                  id="navigationMobileToggle"
+                  aria-label="Open Menu"
+                  aria-expanded="false"
+                  class="navigation-mobile-toggle"
+                >
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M4 6h16M4 12h16M4 18h16"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </nav>
+            <div id="navigationMobileOverlay" class="navigation-mobile-overlay">
+              <div class="navigation-mobile-header">
+                <a
+                  href="index.html"
+                  data-thq-link-box="true"
+                  class="navigation-logo-group"
+                >
+                  <div class="navigation-logo-icon">
+                    <svg
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8c0 5.5-4.78 10-10 10"
+                        ></path>
+                        <path
+                          d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <span class="navigation-brand-name">SageSlate</span>
+                </a>
+                <button
+                  id="navigationMobileClose"
+                  aria-label="Close Menu"
+                  class="navigation-mobile-close"
+                >
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1zm-5.5-3.5l-5 5m0-5l5 5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="navigation-mobile-content">
+                <div class="navigation-mobile-links">
+                  <a
+                    href="index.html"
+                    data-thq-link-box="true"
+                    class="navigation-mobile-link"
+                  >
+                    <span>Services</span>
+                  </a>
+                  <a
+                    href="index.html"
+                    data-thq-link-box="true"
+                    class="navigation-mobile-link"
+                  >
+                    <span>Assessment</span>
+                  </a>
+                  <a
+                    href="index.html"
+                    data-thq-link-box="true"
+                    class="navigation-mobile-link"
+                  >
+                    <span>Contact</span>
+                  </a>
+                  <a
+                    href="index.html"
+                    data-thq-link-box="true"
+                    class="btn-primary btn btn-lg"
+                  >
+                    <span>Book Consultation</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="navigation-container2">
+              <div class="navigation-container3">
+                <style>
+                          @keyframes mobileMenuFadeIn {from {opacity: 0;
+                  transform: translateY(-10px);}
+                  to {opacity: 1;
+                  transform: translateY(0);}}
+                </style>
+              </div>
+            </div>
+            <div class="navigation-container4">
+              <div class="navigation-container5">
+                <script defer="" data-name="navigation-logic">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const mobileToggle = document.getElementById("navigationMobileToggle")
+                      const mobileClose = document.getElementById("navigationMobileClose")
+                      const mobileOverlay = document.getElementById("navigationMobileOverlay")
+                      const bodyElement = document.body
+
+                      function openMenu() {
+                        mobileOverlay.classList.add("is-active")
+                        mobileToggle.setAttribute("aria-expanded", "true")
+                        bodyElement.style.overflow = "hidden"
+                      }
+
+                      function closeMenu() {
+                        mobileOverlay.classList.remove("is-active")
+                        mobileToggle.setAttribute("aria-expanded", "false")
+                        bodyElement.style.overflow = ""
+                      }
+
+                      mobileToggle.addEventListener("click", openMenu)
+                      mobileClose.addEventListener("click", closeMenu)
+
+                      // Close menu on link click
+                      const mobileLinks = document.querySelectorAll(".navigation-mobile-link")
+                      mobileLinks.forEach((link) => {
+                        link.addEventListener("click", closeMenu)
+                      })
+
+                      // Close menu on escape key
+                      document.addEventListener("keydown", (e) => {
+                        if (e.key === "Escape" && mobileOverlay.classList.contains("is-active")) {
+                          closeMenu()
+                        }
+                      })
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </navigation-wrapper>
+        <section id="tq-main" class="hero-nutrition-mental-health">
+          <div class="hero-media-wrapper">
+            <video
+              src="https://videos.pexels.com/video-files/5236949/5236949-hd_1280_720_30fps.mp4"
+              loop="true"
+              muted="true"
+              poster="https://images.pexels.com/videos/5236949/pictures/preview-0.jpg"
+              autoplay="true"
+              playsinline="true"
+              class="hero-background-video"
+            ></video>
+            <div class="hero-overlay"></div>
+          </div>
+          <div class="hero-content-container">
+            <div class="hero-text-block">
+              <h1 class="home-hero-title hero-title">
+                <span>Nourishing the Mind,</span>
+                <br />
+                <span>Healing the Body.</span>
+              </h1>
+              <p class="hero-subtitle home-hero-subtitle">
+                Experience a dual-practice approach where dietary science meets
+                compassionate social work. We integrate nutrition and mental
+                health to support your complete well-being.
+              </p>
+              <div class="hero-cta-group">
+                <a
+                  href="#assessment"
+                  data-thq-link-box="true"
+                  class="btn-primary btn btn-lg"
+                >
+                  <span>Start Assessment</span>
+                </a>
+                <a
+                  href="#contact"
+                  data-thq-link-box="true"
+                  class="btn btn-outline btn-lg"
+                >
+                  <span>Contact Us</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="services-snapshot">
+          <div class="services-container">
+            <div class="services-header">
+              <h2 class="section-title">Integrated Care Services</h2>
+              <p class="section-content">
+                Our clinical expertise spans across three pillars of holistic
+                health.
+              </p>
+            </div>
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="service-icon">
+                  <svg
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8c0 5.5-4.78 10-10 10"
+                      ></path>
+                      <path
+                        d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <h3 class="section-subtitle">Dietary Counseling</h3>
+                <p class="section-content">
+                  Personalized nutritional strategies designed to fuel your
+                  brain and stabilize your mood through evidence-based dietary
+                  changes.
+                </p>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <svg
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 18V5m3 8a4.17 4.17 0 0 1-3-4a4.17 4.17 0 0 1-3 4m8.598-6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"
+                      ></path>
+                      <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"></path>
+                      <path d="M18 18a4 4 0 0 0 2-7.464"></path>
+                      <path
+                        d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"
+                      ></path>
+                      <path d="M6 18a4 4 0 0 1-2-7.464"></path>
+                      <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"></path>
+                    </g>
+                  </svg>
+                </div>
+                <h3 class="section-subtitle">Mental Health Support</h3>
+                <p class="section-content">
+                  Compassionate social work services addressing the emotional
+                  and psychological barriers to health and sustainable lifestyle
+                  changes.
+                </p>
+              </div>
+              <div class="service-card">
+                <div class="service-icon">
+                  <svg
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M6 18h8M3 22h18m-7 0a7 7 0 1 0 0-14h-1m-4 6h2m-2-2a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Zm3-6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="section-subtitle">Lab Testing</h3>
+                <p class="section-content">
+                  Clinical food sensitivity screening to identify hidden
+                  triggers that may be impacting your mental clarity and
+                  physical energy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="integrated-care-process">
+          <div class="process-container">
+            <h2 class="section-title">The Patient Journey</h2>
+            <div class="process-stepper">
+              <div class="step-item">
+                <div class="step-number"><span>01</span></div>
+                <div class="step-content">
+                  <h3 class="section-subtitle">Integrated Assessment</h3>
+                  <p class="section-content">
+                    A comprehensive review of your nutritional status and mental
+                    health history conducted by our dual-specialty team.
+                  </p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-number"><span>02</span></div>
+                <div class="step-content">
+                  <h3 class="section-subtitle">Personalized Roadmap</h3>
+                  <p class="section-content">
+                    We collaborate to build a clinical plan that addresses both
+                    physiological needs and psychological resilience.
+                  </p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-number"><span>03</span></div>
+                <div class="step-content">
+                  <h3 class="section-subtitle">Active Monitoring</h3>
+                  <p class="section-content">
+                    Continuous support and laboratory re-testing to ensure your
+                    plan evolves as your health improves.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="patient-testimonials">
+          <div class="testimonials-container">
+            <h2 class="section-title">Stories of Recovery</h2>
+            <div class="testimonials-grid">
+              <div class="testimonial-card">
+                <div class="quote-icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C15.4647 8 15.017 8.44772 15.017 9V12C15.017 12.5523 14.5693 13 14.017 13H11.017C10.4647 13 10.017 12.5523 10.017 12V9C10.017 6.23858 12.2556 4 15.017 4H19.017C20.1216 4 21.017 4.89543 21.017 6V15C21.017 17.7614 18.7784 20 16.017 20H14.017V21ZM3.01697 21L3.01697 18C3.01697 16.8954 3.9124 16 5.01697 16H8.01697C8.56925 16 9.01697 15.5523 9.01697 15V9C9.01697 8.44772 8.56925 8 8.01697 8H5.01697C4.46468 8 4.01697 8.44772 4.01697 9V12C4.01697 12.5523 3.56925 13 3.01697 13H0.0169678C-0.535317 13 -0.983032 12.5523 -0.983032 12V9C-0.983032 6.23858 1.25555 4 4.01697 4H8.01697C9.12154 4 10.017 4.89543 10.017 6V15C10.017 17.7614 7.7784 20 5.01697 20H3.01697V21Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="section-content">
+                  "The integrated approach changed everything. I finally
+                  understood how my gut health was affecting my anxiety."
+                </p>
+                <span class="testimonial-author">Sarah M.</span>
+              </div>
+              <div class="testimonial-card">
+                <div class="quote-icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C15.4647 8 15.017 8.44772 15.017 9V12C15.017 12.5523 14.5693 13 14.017 13H11.017C10.4647 13 10.017 12.5523 10.017 12V9C10.017 6.23858 12.2556 4 15.017 4H19.017C20.1216 4 21.017 4.89543 21.017 6V15C21.017 17.7614 18.7784 20 16.017 20H14.017V21ZM3.01697 21L3.01697 18C3.01697 16.8954 3.9124 16 5.01697 16H8.01697C8.56925 16 9.01697 15.5523 9.01697 15V9C9.01697 8.44772 8.56925 8 8.01697 8H5.01697C4.46468 8 4.01697 8.44772 4.01697 9V12C4.01697 12.5523 3.56925 13 3.01697 13H0.0169678C-0.535317 13 -0.983032 12.5523 -0.983032 12V9C-0.983032 6.23858 1.25555 4 4.01697 4H8.01697C9.12154 4 10.017 4.89543 10.017 6V15C10.017 17.7614 7.7784 20 5.01697 20H3.01697V21Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="section-content">
+                  "Practical, clinical, and compassionate. SageSlate gave me the
+                  tools to manage my energy levels sustainably."
+                </p>
+                <span class="testimonial-author">David R.</span>
+              </div>
+              <div class="testimonial-card">
+                <div class="quote-icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C15.4647 8 15.017 8.44772 15.017 9V12C15.017 12.5523 14.5693 13 14.017 13H11.017C10.4647 13 10.017 12.5523 10.017 12V9C10.017 6.23858 12.2556 4 15.017 4H19.017C20.1216 4 21.017 4.89543 21.017 6V15C21.017 17.7614 18.7784 20 16.017 20H14.017V21ZM3.01697 21L3.01697 18C3.01697 16.8954 3.9124 16 5.01697 16H8.01697C8.56925 16 9.01697 15.5523 9.01697 15V9C9.01697 8.44772 8.56925 8 8.01697 8H5.01697C4.46468 8 4.01697 8.44772 4.01697 9V12C4.01697 12.5523 3.56925 13 3.01697 13H0.0169678C-0.535317 13 -0.983032 12.5523 -0.983032 12V9C-0.983032 6.23858 1.25555 4 4.01697 4H8.01697C9.12154 4 10.017 4.89543 10.017 6V15C10.017 17.7614 7.7784 20 5.01697 20H3.01697V21Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="section-content">
+                  "The lab testing was the missing piece. Identifying my
+                  sensitivities allowed me to focus on my mental health therapy
+                  effectively."
+                </p>
+                <span class="testimonial-author">Elena K.</span>
+              </div>
+              <div class="testimonial-card">
+                <div class="quote-icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C15.4647 8 15.017 8.44772 15.017 9V12C15.017 12.5523 14.5693 13 14.017 13H11.017C10.4647 13 10.017 12.5523 10.017 12V9C10.017 6.23858 12.2556 4 15.017 4H19.017C20.1216 4 21.017 4.89543 21.017 6V15C21.017 17.7614 18.7784 20 16.017 20H14.017V21ZM3.01697 21L3.01697 18C3.01697 16.8954 3.9124 16 5.01697 16H8.01697C8.56925 16 9.01697 15.5523 9.01697 15V9C9.01697 8.44772 8.56925 8 8.01697 8H5.01697C4.46468 8 4.01697 8.44772 4.01697 9V12C4.01697 12.5523 3.56925 13 3.01697 13H0.0169678C-0.535317 13 -0.983032 12.5523 -0.983032 12V9C-0.983032 6.23858 1.25555 4 4.01697 4H8.01697C9.12154 4 10.017 4.89543 10.017 6V15C10.017 17.7614 7.7784 20 5.01697 20H3.01697V21Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="section-content">
+                  "Highly professional clinicians who truly listen. I felt seen
+                  and supported through every step of the process."
+                </p>
+                <span class="testimonial-author">Mark T.</span>
+              </div>
+              <div class="testimonial-card">
+                <div class="quote-icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C15.4647 8 15.017 8.44772 15.017 9V12C15.017 12.5523 14.5693 13 14.017 13H11.017C10.4647 13 10.017 12.5523 10.017 12V9C10.017 6.23858 12.2556 4 15.017 4H19.017C20.1216 4 21.017 4.89543 21.017 6V15C21.017 17.7614 18.7784 20 16.017 20H14.017V21ZM3.01697 21L3.01697 18C3.01697 16.8954 3.9124 16 5.01697 16H8.01697C8.56925 16 9.01697 15.5523 9.01697 15V9C9.01697 8.44772 8.56925 8 8.01697 8H5.01697C4.46468 8 4.01697 8.44772 4.01697 9V12C4.01697 12.5523 3.56925 13 3.01697 13H0.0169678C-0.535317 13 -0.983032 12.5523 -0.983032 12V9C-0.983032 6.23858 1.25555 4 4.01697 4H8.01697C9.12154 4 10.017 4.89543 10.017 6V15C10.017 17.7614 7.7784 20 5.01697 20H3.01697V21Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="section-content">
+                  "Finally, a clinic that doesn't just treat symptoms but looks
+                  at the whole person. My life is back on track."
+                </p>
+                <span class="testimonial-author">Julianna W.</span>
+              </div>
+              <div class="testimonial-card">
+                <div class="quote-icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C15.4647 8 15.017 8.44772 15.017 9V12C15.017 12.5523 14.5693 13 14.017 13H11.017C10.4647 13 10.017 12.5523 10.017 12V9C10.017 6.23858 12.2556 4 15.017 4H19.017C20.1216 4 21.017 4.89543 21.017 6V15C21.017 17.7614 18.7784 20 16.017 20H14.017V21ZM3.01697 21L3.01697 18C3.01697 16.8954 3.9124 16 5.01697 16H8.01697C8.56925 16 9.01697 15.5523 9.01697 15V9C9.01697 8.44772 8.56925 8 8.01697 8H5.01697C4.46468 8 4.01697 8.44772 4.01697 9V12C4.01697 12.5523 3.56925 13 3.01697 13H0.0169678C-0.535317 13 -0.983032 12.5523 -0.983032 12V9C-0.983032 6.23858 1.25555 4 4.01697 4H8.01697C9.12154 4 10.017 4.89543 10.017 6V15C10.017 17.7614 7.7784 20 5.01697 20H3.01697V21Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="section-content">
+                  "The screening was easy and the follow-up was incredibly
+                  thorough. I recommend SageSlate to everyone."
+                </p>
+                <span class="testimonial-author">Chris L.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="assessment" class="assessment-cta">
+          <div class="cta-container">
+            <div class="cta-card">
+              <div class="cta-content">
+                <h2 class="section-title">Take the First Step</h2>
+                <p class="section-content">
+                  Identify potential triggers with our Food Sensitivity
+                  Screening or schedule a consultation to discuss your
+                  integrated care needs. Your privacy is our priority—all data
+                  is handled with strict clinical confidentiality.
+                </p>
+                <div class="cta-actions">
+                  <button id="openAssessmentBtn" class="btn-primary btn btn-lg">
+                    Start Screening
+                  </button>
+                  <a
+                    href="#contact"
+                    data-thq-link-box="true"
+                    class="btn-secondary btn btn-lg"
+                  >
+                    <span>Book Consultation</span>
+                  </a>
+                </div>
+                <p class="cta-reassurance">
+                  <svg
+                    width="16"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 22s8-4 8-10V5l-8-3l-8 3v7c0 6 8 10 8 10"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                  <span>HIPAA Compliant &amp; Fully Confidential</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about-clinicians">
+          <div class="about-container">
+            <div class="clinician-split">
+              <div class="clinician-image-wrapper">
+                <img
+                  loading="eager"
+                  decoding="async"
+                  alt="Clinical Nutritionist and Social Worker"
+                  src="https://images.pexels.com/photos/19675470/pexels-photo-19675470.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  fetchpriority="high"
+                  class="clinician-img"
+                />
+              </div>
+              <div class="clinician-content">
+                <h2 class="section-title">Meet Your Care Team</h2>
+                <p class="section-content">
+                  Our mission at SageSlate Care is to bridge the gap between
+                  physical nourishment and psychological health. We believe that
+                  true wellness requires a compassionate, evidence-based
+                  approach that considers the whole person.
+                </p>
+                <div class="bio-grid">
+                  <div class="bio-item">
+                    <h3 class="section-subtitle">Clinical Dietitian</h3>
+                    <p class="section-content">
+                      Specializing in gut-brain axis research and nutritional
+                      psychiatry to optimize cognitive function through
+                      specialized dietary protocols.
+                    </p>
+                  </div>
+                  <div class="bio-item">
+                    <h3 class="section-subtitle">Licensed Social Worker</h3>
+                    <p class="section-content">
+                      Expert in therapeutic modalities that address the
+                      behavioral and emotional aspects of health, fostering
+                      long-term resilience.
+                    </p>
+                  </div>
+                </div>
+                <div class="mission-statement">
+                  <p class="section-content">
+                    <span class="home-text19">Our Mission:</span>
+                    <span>
+                      To provide integrated, patient-centered care that empowers
+                      individuals to reclaim their health through the
+                      intersection of nutrition and mental well-being.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="quick-contact">
+          <div class="contact-container">
+            <div class="contact-grid">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="section-subtitle">Call Us</h3>
+                <p class="section-content">(555) 123-4567</p>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                      <rect x="2" y="4" rx="2" width="20" height="16"></rect>
+                    </g>
+                  </svg>
+                </div>
+                <h3 class="section-subtitle">Email</h3>
+                <p class="section-content">care@sageslate.com</p>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                      ></path>
+                      <circle r="3" cx="12" cy="10"></circle>
+                    </g>
+                  </svg>
+                </div>
+                <h3 class="section-subtitle">Visit</h3>
+                <p class="section-content">
+                  <span>123 Wellness Way, Suite 400</span>
+                  <br />
+                  <span>Portland, OR 97201</span>
+                </p>
+              </div>
+            </div>
+            <div class="contact-form-wrapper">
+              <form
+                action="/submit"
+                method="POST"
+                data-form-id="88b752e5-1470-47af-acb2-eb9fecf16149"
+                class="patient-inquiry-form"
+              >
+                <div class="form-row">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      id="thq_true_5PdD"
+                      name="true"
+                      required="true"
+                      placeholder="Full Name"
+                      data-form-field-id="thq_true_5PdD"
+                      class="form-input"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      id="thq_email_BTYI"
+                      name="email"
+                      required="true"
+                      placeholder="Email Address"
+                      data-form-field-id="thq_email_BTYI"
+                      class="form-input"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    id="thq_message_6R_E"
+                    name="message"
+                    required="true"
+                    minlength="10"
+                    placeholder="How can we help you today?"
+                    data-form-field-id="thq_message_6R_E"
+                    class="form-textarea"
+                  ></textarea>
+                </div>
+                <button
+                  id="thq_button_72lo"
+                  name="button"
+                  type="submit"
+                  data-form-field-id="thq_button_72lo"
+                  class="btn-primary btn btn-lg"
+                >
+                  Send Inquiry
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <dialog id="assessmentModal" class="assessment-dialog">
+          <div class="dialog-header">
+            <h2 class="section-subtitle">Food Sensitivity Screening</h2>
+            <button id="closeAssessmentBtn" class="close-btn">
+              <svg
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="3" rx="2" ry="2" width="18" height="18"></rect>
+                  <path d="m15 9l-6 6m0-6l6 6"></path>
+                </g>
+              </svg>
+            </button>
+          </div>
+          <div class="dialog-body">
+            <form
+              id="assessmentForm"
+              data-form-id="d3a6c05f-bad1-4212-83e2-23d3ab1c377e"
+              class="multi-step-form"
+            >
+              <div data-step="1" class="form-step active">
+                <h3 class="section-content">
+                  <span class="home-text23">Step 1: Current Symptoms</span>
+                </h3>
+                <p class="section-content">
+                  Do you experience frequent bloating, fatigue, or brain fog
+                  after meals?
+                </p>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input
+                      type="radio"
+                      id="thq_symptoms_v1-B"
+                      name="symptoms"
+                      value="yes"
+                      required="true"
+                      data-form-field-id="thq_symptoms_v1-B"
+                    />
+                    <span>Yes</span>
+                  </label>
+                  <label class="radio-label">
+                    <input
+                      type="radio"
+                      id="thq_symptoms_5Ef3"
+                      name="symptoms"
+                      value="no"
+                      data-form-field-id="thq_symptoms_5Ef3"
+                    />
+                    <span>No</span>
+                  </label>
+                </div>
+                <div class="step-footer">
+                  <button
+                    id="thq_button_-ak5"
+                    name="button"
+                    type="button"
+                    data-form-field-id="thq_button_-ak5"
+                    class="btn-primary next-step btn"
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+              <div data-step="2" class="form-step">
+                <h3 class="section-content">
+                  <span class="home-text26">Step 2: Mood Impact</span>
+                </h3>
+                <p class="section-content">
+                  Have you noticed changes in your mood or anxiety levels
+                  related to your diet?
+                </p>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input
+                      type="radio"
+                      id="thq_mood_xk0j"
+                      name="mood"
+                      value="yes"
+                      data-form-field-id="thq_mood_xk0j"
+                    />
+                    <span>Yes</span>
+                  </label>
+                  <label class="radio-label">
+                    <input
+                      type="radio"
+                      id="thq_mood_24_i"
+                      name="mood"
+                      value="no"
+                      data-form-field-id="thq_mood_24_i"
+                    />
+                    <span>No</span>
+                  </label>
+                </div>
+                <div class="step-footer">
+                  <button
+                    id="thq_button_ftlW"
+                    name="button"
+                    type="button"
+                    data-form-field-id="thq_button_ftlW"
+                    class="btn btn-outline prev-step"
+                  >
+                    Back
+                  </button>
+                  <button
+                    id="thq_button_7WBL"
+                    name="button"
+                    type="button"
+                    data-form-field-id="thq_button_7WBL"
+                    class="btn-primary next-step btn"
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+              <div data-step="3" class="form-step">
+                <h3 class="section-content">
+                  <span class="home-text29">Step 3: Contact Details</span>
+                </h3>
+                <p class="section-content">
+                  Where should we send your preliminary screening results?
+                </p>
+                <input
+                  type="email"
+                  id="thq_results_email_Qk6F"
+                  name="results_email"
+                  required="true"
+                  placeholder="Your Email"
+                  data-form-field-id="thq_results_email_Qk6F"
+                  class="form-input"
+                />
+                <div class="step-footer">
+                  <button
+                    id="thq_button_BBVQ"
+                    name="button"
+                    type="button"
+                    data-form-field-id="thq_button_BBVQ"
+                    class="btn btn-outline prev-step"
+                  >
+                    Back
+                  </button>
+                  <button
+                    id="thq_button_xSLW"
+                    name="button"
+                    type="submit"
+                    data-form-field-id="thq_button_xSLW"
+                    class="btn-primary btn"
+                  >
+                    Complete Screening
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div
+              id="assessmentSuccess"
+              class="home-thq-success-message-elm success-message"
+            >
+              <svg
+                width="48"
+                xmlns="http://www.w3.org/2000/svg"
+                height="48"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M3.85 8.62a4 4 0 0 1 4.78-4.77a4 4 0 0 1 6.74 0a4 4 0 0 1 4.78 4.78a4 4 0 0 1 0 6.74a4 4 0 0 1-4.77 4.78a4 4 0 0 1-6.75 0a4 4 0 0 1-4.78-4.77a4 4 0 0 1 0-6.76"
+                  ></path>
+                  <path d="m9 12l2 2l4-4"></path>
+                </g>
+              </svg>
+              <h3 class="section-subtitle">Thank You</h3>
+              <p class="section-content">
+                Your screening has been submitted. A clinician will review your
+                responses and contact you within 24 hours.
+              </p>
+            </div>
+          </div>
+        </dialog>
+        <div class="home-container2">
+          <div class="home-container3">
+            <style>
+                      @keyframes fadeIn {from {opacity: 0;
+              transform: translateY(10px);}
+              to {opacity: 1;
+              transform: translateY(0);}}
+            </style>
+          </div>
+        </div>
+        <div class="home-container4">
+          <div class="home-container5">
+            <script defer="" data-name="sageslate-logic">
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                  // Modal Handling
+                  const assessmentModal = document.getElementById("assessmentModal")
+                  const openAssessmentBtn = document.getElementById("openAssessmentBtn")
+                  const closeAssessmentBtn = document.getElementById("closeAssessmentBtn")
+
+                  if (openAssessmentBtn && assessmentModal) {
+                    openAssessmentBtn.addEventListener("click", () => {
+                      assessmentModal.showModal()
+                    })
+                  }
+
+                  if (closeAssessmentBtn && assessmentModal) {
+                    closeAssessmentBtn.addEventListener("click", () => {
+                      assessmentModal.close()
+                    })
+                  }
+
+                  // Close modal on backdrop click
+                  assessmentModal.addEventListener("click", (e) => {
+                    const dialogDimensions = assessmentModal.getBoundingClientRect()
+                    if (e.clientX < dialogDimensions.left || e.clientX > dialogDimensions.right || e.clientY < dialogDimensions.top || e.clientY > dialogDimensions.bottom) {
+                      assessmentModal.close()
+                    }
+                  })
+
+                  // Multi-step Form Logic
+                  const steps = document.querySelectorAll(".form-step")
+                  const nextBtns = document.querySelectorAll(".next-step")
+                  const prevBtns = document.querySelectorAll(".prev-step")
+                  const assessmentForm = document.getElementById("assessmentForm")
+                  const assessmentSuccess = document.getElementById("assessmentSuccess")
+
+                  nextBtns.forEach((btn) => {
+                    btn.addEventListener("click", () => {
+                      const currentStep = btn.closest(".form-step")
+                      const nextStepNum = parseInt(currentStep.dataset.step) + 1
+
+                      // Basic validation for radio buttons in steps 1 & 2
+                      const radios = currentStep.querySelectorAll('input[type="radio"]')
+                      if (radios.length > 0) {
+                        const checked = Array.from(radios).some((r) => r.checked)
+                        if (!checked) {
+                          alert("Please select an option to continue.")
+                          return
+                        }
+                      }
+
+                      currentStep.classList.remove("active")
+                      document.querySelector(`.form-step[data-step="${nextStepNum}"]`).classList.add("active")
+                    })
+                  })
+
+                  prevBtns.forEach((btn) => {
+                    btn.addEventListener("click", () => {
+                      const currentStep = btn.closest(".form-step")
+                      const prevStepNum = parseInt(currentStep.dataset.step) - 1
+                      currentStep.classList.remove("active")
+                      document.querySelector(`.form-step[data-step="${prevStepNum}"]`).classList.add("active")
+                    })
+                  })
+
+                  if (assessmentForm) {
+                    assessmentForm.addEventListener("submit", (e) => {
+                      e.preventDefault()
+                      // Simulate submission
+                      assessmentForm.style.display = "none"
+                      assessmentSuccess.style.display = "block"
+
+                      // Auto-close after 3 seconds
+                      setTimeout(() => {
+                        assessmentModal.close()
+                        // Reset form for next time
+                        setTimeout(() => {
+                          assessmentForm.reset()
+                          assessmentForm.style.display = "block"
+                          assessmentSuccess.style.display = "none"
+                          steps.forEach((s) => s.classList.remove("active"))
+                          steps[0].classList.add("active")
+                        }, 500)
+                      }, 3000)
+                    })
+                  }
+
+                  // Scroll Reveal Animation (Subtle Parallax & Fade)
+                  const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: "0px 0px -50px 0px",
+                  }
+
+                  const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                      if (entry.isIntersecting) {
+                        entry.target.style.opacity = "1"
+                        entry.target.style.transform = "translateY(0)"
+                        observer.unobserve(entry.target)
+                      }
+                    })
+                  }, observerOptions)
+
+                  // Apply to cards and sections
+                  const revealElements = document.querySelectorAll(".service-card, .step-item, .testimonial-card, .clinician-split, .contact-item")
+                  revealElements.forEach((el) => {
+                    el.style.opacity = "0"
+                    el.style.transform = "translateY(20px)"
+                    el.style.transition = "all 0.6s ease-out"
+                    observer.observe(el)
+                  })
+                })()
+              });
+            </script>
+          </div>
+        </div>
+        <footer-wrapper class="footer-wrapper">
+          <!--Footer component-->
+          <div role="contentinfo" class="footer-container1">
+            <footer class="footer-root">
+              <div class="footer-container">
+                <div class="footer-layout">
+                  <div class="footer-column footer-brand-column">
+                    <div class="footer-brand-wrap">
+                      <span class="footer-logo-text">SageSlate Care</span>
+                    </div>
+                    <p class="footer-description section-content">
+                      Bridging the gap between nutritional science and emotional
+                      well-being. We provide clinical expertise for a balanced
+                      mind and body.
+                    </p>
+                    <div class="footer-social-links">
+                      <a
+                        href="#"
+                        data-thq-link-wrapper="true"
+                        class="footer-link1"
+                      >
+                        <div
+                          aria-label="Follow us on Instagram"
+                          class="footer-social-icon"
+                        >
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"
+                              ></path>
+                              <path
+                                d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0m7.5-4.5v.01"
+                              ></path>
+                            </g>
+                          </svg>
+                        </div>
+                      </a>
+                      <a
+                        href="#"
+                        data-thq-link-wrapper="true"
+                        class="footer-link2"
+                      >
+                        <div
+                          aria-label="Connect on LinkedIn"
+                          class="footer-social-icon"
+                        >
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M8 11v5m0-8v.01M12 16v-5m4 5v-3a2 2 0 1 0-4 0"
+                              ></path>
+                              <path
+                                d="M3 7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"
+                              ></path>
+                            </g>
+                          </svg>
+                        </div>
+                      </a>
+                      <a
+                        href="#"
+                        data-thq-link-wrapper="true"
+                        class="footer-link3"
+                      >
+                        <div
+                          aria-label="Visit our Facebook"
+                          class="footer-social-icon"
+                        >
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M7 10v4h3v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2z"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="footer-column">
+                    <h2 class="footer-heading section-subtitle">
+                      Practice Areas
+                    </h2>
+                    <ul class="footer-link-list">
+                      <li>
+                        <a href="#">
+                          <div class="footer-link">
+                            <span>Dietary Counseling</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="footer-link">
+                            <span>Mental Health Support</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="footer-link">
+                            <span>Food Sensitivity Testing</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="footer-link">
+                            <span>Holistic Well-being</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="footer-link">
+                            <span>Patient Resources</span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="footer-column">
+                    <h2 class="footer-heading section-subtitle">
+                      Get in Touch
+                    </h2>
+                    <div class="footer-contact-info">
+                      <div class="footer-contact-item">
+                        <div class="footer-icon-box">
+                          <svg
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                              ></path>
+                              <rect
+                                x="2"
+                                y="4"
+                                rx="2"
+                                width="20"
+                                height="16"
+                              ></rect>
+                            </g>
+                          </svg>
+                        </div>
+                        <a
+                          href="mailto:hello@sageslatecare.com?subject="
+                          data-thq-link-box="true"
+                          class="footer-link"
+                        >
+                          <span>hello@sageslatecare.com</span>
+                        </a>
+                      </div>
+                      <div class="footer-contact-item">
+                        <div class="footer-icon-box">
+                          <svg
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                        <a
+                          href="tel:+15551234567"
+                          data-thq-link-box="true"
+                          class="footer-link"
+                        >
+                          <span>(555) 123-4567</span>
+                        </a>
+                      </div>
+                      <div class="footer-contact-item">
+                        <div class="footer-icon-box">
+                          <svg
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                              ></path>
+                              <circle r="3" cx="12" cy="10"></circle>
+                            </g>
+                          </svg>
+                        </div>
+                        <span class="footer-text">
+                          <span>123 Wellness Way, Suite 400</span>
+                          <br />
+                          <span>Slate City, SC 29401</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-bottom">
+                  <div class="footer-divider"></div>
+                  <div class="footer-bottom-content">
+                    <p class="footer-copyright">
+                      <span>&amp;copy;</span>
+                      <span id="current-year"></span>
+                      <span>SageSlate Care. All rights reserved.</span>
+                    </p>
+                    <div class="footer-legal-links">
+                      <a
+                        href="#"
+                        data-thq-link-box="true"
+                        class="footer-link-sm"
+                      >
+                        <span>Privacy Policy</span>
+                      </a>
+                      <a
+                        href="#"
+                        data-thq-link-box="true"
+                        class="footer-link-sm"
+                      >
+                        <span>Terms of Service</span>
+                      </a>
+                      <a
+                        href="#"
+                        data-thq-link-box="true"
+                        class="footer-link-sm"
+                      >
+                        <span>Accessibility</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <div class="footer-container2">
+              <div class="footer-container3">
+                <script defer="" data-name="footer-logic">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const yearSpan = document.getElementById("current-year")
+                      if (yearSpan) {
+                        yearSpan.textContent = new Date().getFullYear()
+                      }
+
+                      const socialIcons = document.querySelectorAll(".footer-social-icon")
+                      socialIcons.forEach((icon) => {
+                        icon.addEventListener("mouseenter", () => {
+                          icon.style.boxShadow = "0 4px 12px color-mix(in oklab, var(--color-primary) 20%, transparent)"
+                        })
+                        icon.addEventListener("mouseleave", () => {
+                          icon.style.boxShadow = "none"
+                        })
+                      })
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </footer-wrapper>
+      </div>
+      <link rel="canonical" href="https://wellnesstoday.teleporthq.site/" />
+    </div>
+    <script>
+      (function () {
+        var PROBE_ATTR = 'data-teleport-slider-probe';
+        var PROBE_MAX_LIFETIME_MS = 30000;
+        var SwiperCtor = null;
+        var capturedModules = null;
+        var probeEl = null;
+        var trackedInstances = [];
+        function safeJsonParse(raw) {
+          if (!raw) return null;
+          var decoder = document.createElement('textarea');
+          decoder.innerHTML = raw;
+          try { return JSON.parse(decoder.value); } catch (e) { return null; }
+        }
+        function toPositiveInt(v, fallback) {
+          var n = parseInt(v, 10);
+          return (!isNaN(n) && n > 0) ? n : fallback;
+        }
+        function toSpacing(v, fallback) {
+          // Zero is a legitimate gap, so it must not fall through to the default
+          // the way toPositiveInt makes it.
+          var n = parseInt(v, 10);
+          return (!isNaN(n) && n >= 0) ? n : fallback;
+        }
+        function buildBreakpoints(el) {
+          var raw = safeJsonParse(el.getAttribute('data-breakpoints')) || {};
+          var mobile = raw.mobile || {};
+          var tablet = raw.tablet || {};
+          var desktop = raw.desktop || {};
+          // With no breakpoint map, derive the per-width slide count from the
+          // slider's OWN base config instead of assuming a multi-card carousel.
+          // Hardcoding 3-on-desktop here overrode every single-slide slider that
+          // omits the map — the generator tells the model to omit it for hero
+          // carousels, and the gallery lightbox omitted it too — which fits every
+          // slide onto one page and leaves the arrows and bullets with nowhere to
+          // go. Same derivation the editor uses in flows/slider.ts.
+          var baseSlidesPerView = toPositiveInt(el.getAttribute('data-slides-per-view'), 1);
+          var bps = {};
+          bps[0] = {
+            slidesPerView: toPositiveInt(mobile.slidesPerView, 1),
+            spaceBetween: toSpacing(mobile.spaceBetween, 12),
+          };
+          bps[768] = {
+            slidesPerView: toPositiveInt(tablet.slidesPerView, Math.min(baseSlidesPerView, 2)),
+            spaceBetween: toSpacing(tablet.spaceBetween, 16),
+          };
+          bps[1024] = {
+            slidesPerView: toPositiveInt(desktop.slidesPerView, baseSlidesPerView),
+            spaceBetween: toSpacing(desktop.spaceBetween, 24),
+          };
+          return bps;
+        }
+        function buildConfig(el) {
+          var cfg = {
+            slidesPerView: toPositiveInt(el.getAttribute('data-slides-per-view'), 1),
+            spaceBetween: toPositiveInt(el.getAttribute('data-space-between'), 0),
+            breakpoints: buildBreakpoints(el),
+          };
+          // Carry over the module classes that the CDN bundle loaded
+          // initially (Navigation / Pagination / Autoplay). Without these
+          // the re-instantiated Swiper only has Resize + Observer — the
+          // navigation arrows and pagination bullets become dead.
+          if (capturedModules && capturedModules.length > 0) {
+            cfg.modules = capturedModules.slice();
+          }
+          if (el.getAttribute('data-pagination') === 'true') {
+            var paginationEl = el.querySelector('.swiper-pagination');
+            if (paginationEl) {
+              cfg.pagination = {
+                el: paginationEl,
+                clickable: true,
+                type: 'bullets',
+                renderBullet: bulletRendererFor(paginationEl),
+              };
+            }
+          }
+          if (el.getAttribute('data-navigation') === 'true') {
+            var nextEl = el.querySelector('.swiper-button-next');
+            var prevEl = el.querySelector('.swiper-button-prev');
+            if (nextEl && prevEl) cfg.navigation = { nextEl: nextEl, prevEl: prevEl };
+          }
+          return cfg;
+        }
+        // The bullet the editor designed is the template for every bullet Swiper
+        // renders — captured before any init pass replaces the container's
+        // children, and re-captured when React mounts a fresh container.
+        var BULLET_TEMPLATE_KEY = '__tqBulletTemplate';
+        function captureBulletTemplates() {
+          var containers = document.querySelectorAll('[data-thq="slider-pagination"]');
+          for (var i = 0; i < containers.length; i++) {
+            var container = containers[i];
+            if (container[BULLET_TEMPLATE_KEY]) continue;
+            var designed = container.querySelector('[data-thq="slider-pagination-bullet"]');
+            if (designed) container[BULLET_TEMPLATE_KEY] = designed.outerHTML;
+          }
+        }
+        function bulletRendererFor(paginationEl) {
+          var template = paginationEl[BULLET_TEMPLATE_KEY];
+          if (!template) return undefined;
+          return function (_index, className) {
+            var host = document.createElement('div');
+            host.innerHTML = template;
+            var bullet = host.firstElementChild;
+            if (!bullet) return '<span class="' + className + '"></span>';
+            bullet.classList.remove('swiper-pagination-bullet-active');
+            bullet.classList.add(className);
+            return bullet.outerHTML;
+          };
+        }
+        function captureFromInstance(instance) {
+          if (!instance) return;
+          if (!SwiperCtor && instance.constructor && instance.constructor.name === 'Swiper') {
+            SwiperCtor = instance.constructor;
+          }
+          if (!capturedModules && instance.params && Array.isArray(instance.params.modules)) {
+            // Clone so Swiper's own mutation of params.modules during teardown
+            // does not surprise us on a subsequent re-instantiation.
+            capturedModules = instance.params.modules.slice();
+          }
+        }
+        function createCtorProbe() {
+          // This script is inline in <body>, so it runs while the document is
+          // still parsing — before the deferred CDN bundle executes. The probe
+          // is therefore guaranteed to be present for the bundle's one and only
+          // init pass. It is appended at the end of <body>, after the Next.js
+          // root, so it is also the LAST element that pass reaches: even if the
+          // bundle ever choked on it, every real slider would already be built.
+          var host = document.body || document.documentElement;
+          if (!host) return;
+          try {
+            var el = document.createElement('div');
+            el.setAttribute('data-thq', 'slider');
+            el.setAttribute(PROBE_ATTR, 'true');
+            el.setAttribute('aria-hidden', 'true');
+            el.className = 'swiper';
+            el.style.cssText =
+              'position:absolute;left:-9999px;top:0;width:0;height:0;overflow:hidden;visibility:hidden;pointer-events:none';
+            el.innerHTML =
+              '<div data-thq="slider-wrapper" class="swiper-wrapper">' +
+              '<div data-thq="slider-slide" class="swiper-slide"></div></div>';
+            host.appendChild(el);
+            probeEl = el;
+            // Never leave the probe behind if the CDN bundle fails to load at all.
+            setTimeout(disposeProbe, PROBE_MAX_LIFETIME_MS);
+          } catch (_e) { /* best-effort */ }
+        }
+        function disposeProbe() {
+          if (!probeEl) return;
+          var el = probeEl;
+          probeEl = null;
+          try { if (el.swiper && !el.swiper.destroyed) el.swiper.destroy(true, false); } catch (_e) { /* best-effort */ }
+          try { if (el.parentNode) el.parentNode.removeChild(el); } catch (_e) { /* best-effort */ }
+        }
+        function captureCtorFromProbe() {
+          if (!probeEl) return;
+          if (probeEl.swiper) {
+            captureFromInstance(probeEl.swiper);
+          }
+          if (SwiperCtor) {
+            disposeProbe();
+          }
+        }
+        function trackInstance(instance) {
+          instance.__teleportPatched = true;
+          trackedInstances.push(instance);
+          return instance;
+        }
+        function reapDetachedInstances() {
+          // React unmounts a slider that lives inside a conditionally rendered
+          // subtree — the product gallery lightbox — every time it closes. That
+          // leaves our instance bound to a detached element with its window
+          // resize handler and ResizeObserver still live, and every reopen adds
+          // another one. Only DETACHED elements are reaped: destroy() nulls the
+          // element's swiper reference, which would sabotage a live element whose
+          // instance had since been replaced by someone else.
+          if (trackedInstances.length === 0) return;
+          var kept = [];
+          for (var i = 0; i < trackedInstances.length; i++) {
+            var instance = trackedInstances[i];
+            var el = instance && instance.el;
+            if (!el) continue;
+            if (document.contains(el)) {
+              kept.push(instance);
+              continue;
+            }
+            try { if (!instance.destroyed) instance.destroy(true, false); } catch (_e) { /* best-effort */ }
+          }
+          trackedInstances = kept;
+        }
+        function collectSliders() {
+          var all = document.querySelectorAll('[data-thq="slider"]');
+          var sliders = [];
+          for (var i = 0; i < all.length; i++) {
+            if (all[i].hasAttribute(PROBE_ATTR)) continue;
+            sliders.push(all[i]);
+          }
+          return sliders;
+        }
+        function rebuildPaginationDom(instance) {
+          // Pagination bullets can be re-appended after our construction by
+          // the CDN bundle's scheduled post-init render or by React
+          // reconciliation during SPA back-nav. We re-query the pagination
+          // container from the live instance (rather than a captured
+          // reference) because React may have replaced the container DOM
+          // node during a re-mount.
+          try {
+            if (instance.destroyed) return;
+            var pagEl = instance.pagination && instance.pagination.el;
+            if (pagEl) pagEl.innerHTML = '';
+            if (instance.pagination && typeof instance.pagination.render === 'function') {
+              instance.pagination.render();
+            }
+            if (instance.pagination && typeof instance.pagination.update === 'function') {
+              instance.pagination.update();
+            }
+          } catch (_e) { /* best-effort */ }
+        }
+        function replaceWithFreshInstance(el) {
+          // Destroy the CDN-constructed Swiper and rebuild it with the
+          // proper config up front. Patching in place (setBreakpoint +
+          // update) leaves pagination stuck at the original bullet count
+          // (5 for 5 slides at the default slidesPerView=1), Swiper's
+          // external pagination.render() APPENDS instead of rebuilding,
+          // and there is no other public API to force a clean rebuild of
+          // the pagination subsystem. A fresh construction with the right
+          // breakpoints, pagination el, and navigation els gives us the
+          // correct page count (ceil(slides / slidesPerView)) and the
+          // first bullet correctly marked active.
+          try {
+            var pagEl = el.querySelector('.swiper-pagination');
+            try { el.swiper.destroy(true, true); } catch (_destroyErr) { /* best-effort */ }
+            // Clear any pagination bullets Swiper's destroy left behind so
+            // our new render() does not append to them.
+            if (pagEl) pagEl.innerHTML = '';
+            if (!SwiperCtor) return false;
+            var instance = trackInstance(new SwiperCtor(el, buildConfig(el)));
+            // The CDN bundle schedules a delayed pagination render that
+            // fires even after our destroy-and-recreate, re-appending
+            // bullets into the container. React can also restore stale
+            // bullet nodes from the prior page visit during SPA back-nav
+            // reconciliation. Rebuild at several timings so any late
+            // injection is mopped up.
+            setTimeout(function () { rebuildPaginationDom(instance); }, 100);
+            setTimeout(function () { rebuildPaginationDom(instance); }, 400);
+            setTimeout(function () { rebuildPaginationDom(instance); }, 1000);
+            return true;
+          } catch (_err) {
+            return false;
+          }
+        }
+        var isWorking = false;
+        function ensureSwiper(el) {
+          if (!el) return false;
+          if (el.swiper && el.swiper.__teleportPatched) return true;
+          // Guard against reentry: constructing or modifying a Swiper mutates
+          // the DOM, which re-fires the outer MutationObserver synchronously
+          // and would otherwise loop back into this function against a
+          // half-initialised instance.
+          if (isWorking) return false;
+          isWorking = true;
+          try {
+            if (el.swiper) {
+              // Don't touch a Swiper that the CDN bundle is still constructing
+              // — interfering before it finishes corrupts the layout. The
+              // destroyed check covers the window between destroy and the
+              // next mount.
+              if (el.swiper.destroyed) return false;
+              captureFromInstance(el.swiper);
+              // Rebuild the instance from scratch with the correct config:
+              // the CDN's default config ignores our breakpoints and the
+              // pagination bullet count is locked to the original slide
+              // count. A destroy + re-create is the only way to get the
+              // right page-count pagination plus a correctly marked first
+              // active bullet.
+              return replaceWithFreshInstance(el);
+            }
+            // No .swiper attached — either the CDN bundle hasn't fired yet
+            // (poll will retry), or the element was freshly re-mounted by
+            // Next.js SPA back/forward nav, or a modal just revealed a slider
+            // the bundle never saw. The bundle only inits on the initial
+            // DOMContentLoaded (plus a URL change), so it won't re-init any of
+            // those. Construct our own instance with the captured ctor + modules.
+            if (!SwiperCtor) return false;
+            try {
+              // Clear any stale pagination/navigation DOM that survived the
+              // re-mount so the fresh Swiper's render() doesn't append to
+              // leftover bullets/arrows from the previous page visit.
+              var stalePagination = el.querySelector('.swiper-pagination');
+              if (stalePagination) stalePagination.innerHTML = '';
+              trackInstance(new SwiperCtor(el, buildConfig(el)));
+              return true;
+            } catch (_err) {
+              return false;
+            }
+          } finally {
+            isWorking = false;
+          }
+        }
+        function normalisePaginationCount() {
+          // Defensive cleanup: any time the bootstrapper's trigger fires
+          // (initial load, pageshow, or DOM mutation), reconcile the
+          // pagination DOM with the Swiper instance's own bullet tracking.
+          // The CDN bundle and React's SPA reconciliation can leak extra
+          // bullet elements into the container; this keeps the visible
+          // bullet count aligned with the post-breakpoint page count.
+          var all = collectSliders();
+          for (var i = 0; i < all.length; i++) {
+            var el = all[i];
+            if (!el.swiper || !el.swiper.__teleportPatched) continue;
+            if (el.swiper.destroyed) continue;
+            var pagEl = el.swiper.pagination && el.swiper.pagination.el;
+            if (!pagEl) continue;
+            var domCount = pagEl.querySelectorAll('.swiper-pagination-bullet').length;
+            var tracked =
+              el.swiper.pagination && el.swiper.pagination.bullets
+                ? el.swiper.pagination.bullets.length
+                : 0;
+            if (domCount !== tracked && tracked > 0) {
+              rebuildPaginationDom(el.swiper);
+            }
+          }
+        }
+        function ensureAll() {
+          captureCtorFromProbe();
+          reapDetachedInstances();
+          var all = collectSliders();
+          var allDone = all.length > 0;
+          for (var i = 0; i < all.length; i++) {
+            if (!ensureSwiper(all[i])) allDone = false;
+          }
+          normalisePaginationCount();
+          return allDone;
+        }
+        var pollTimer = null;
+        function startPolling() {
+          if (pollTimer) return;
+          var tries = 0;
+          pollTimer = setInterval(function () {
+            tries += 1;
+            if (ensureAll() || tries >= 80) {
+              clearInterval(pollTimer);
+              pollTimer = null;
+            }
+          }, 100);
+        }
+        function trigger() {
+          captureBulletTemplates();
+          if (!ensureAll()) startPolling();
+        }
+        // Delay the first trigger until after the CDN bundle has finished
+        // its own init pass. Running too early lets the MutationObserver
+        // fire while the CDN's Swiper is half-constructed and our patch
+        // interferes with layout.
+        function scheduleInitialTrigger() {
+          setTimeout(trigger, 200);
+        }
+        captureBulletTemplates();
+        createCtorProbe();
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', scheduleInitialTrigger);
+        } else {
+          scheduleInitialTrigger();
+        }
+        window.addEventListener('pageshow', trigger);
+        // Observe the whole document so Next.js SPA back-nav (which re-mounts
+        // the slider element without an attached .swiper instance) triggers
+        // re-instantiation via the captured ctor. Don't invoke the patch
+        // synchronously on each mutation — the CDN bundle's own Swiper
+        // construction fires many mutations and we'd otherwise patch a
+        // half-initialised instance. Debounce through a macrotask so the
+        // current sync mutation chain finishes first.
+        var mutationPending = false;
+        try {
+          var observer = new MutationObserver(function () {
+            if (mutationPending) return;
+            mutationPending = true;
+            setTimeout(function () { mutationPending = false; trigger(); }, 150);
+          });
+          observer.observe(document.documentElement, { childList: true, subtree: true });
+        } catch (_e) { /* MutationObserver unsupported — polling still covers initial load */ }
+      })();
+    </script>
+  </body>
+</html>
